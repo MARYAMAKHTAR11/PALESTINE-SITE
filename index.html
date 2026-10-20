@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Palestine Truth &amp; Solidarity</title>
+<meta name="description" content="A guide to the history of Palestine and Gaza, the present humanitarian reality, and peaceful, practical ways to help.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%87%B5%F0%9F%87%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#007A3D;--r:#CE1126;--w:#fff;--k:#111827;--bg:#F9FAFB;--mut:#4b5563;--line:#e5e7eb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--k);line-height:1.65}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--r);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:var(--w);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;font-size:1.02rem}
+nav ul{display:none;list-style:none;gap:2px}
+nav a{text-decoration:none;font-size:.86rem;font-weight:500;padding:8px 10px;border-radius:8px;color:var(--mut)}
+nav a:hover,nav a.on{color:var(--g);background:#ecf7f1}
+.btn{display:inline-block;background:var(--r);color:var(--w);font-weight:600;padding:12px 22px;border-radius:10px;text-decoration:none;border:2px solid var(--r);cursor:pointer;font:inherit;font-weight:600}
+.btn:hover{background:#a80d1e;border-color:#a80d1e}
+.btn.alt{background:transparent;border-color:var(--w)}
+.btn.alt:hover{background:var(--w);color:var(--k)}
+.btn.sm{padding:9px 16px;font-size:.88rem}
+.burger{background:none;border:0;font-size:1.6rem;cursor:pointer;padding:6px}
+.menu{display:none;background:var(--w);border-top:1px solid var(--line);padding:10px 20px 16px}
+.menu.open{display:block}
+.menu a{display:block;padding:10px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}
+.hide-m{display:none}
+@media(min-width:1040px){nav ul{display:flex}.burger,.menu{display:none!important}.hide-m{display:inline-block}}
+.hero{background:linear-gradient(180deg,var(--k) 0%,var(--k) 62%,var(--g) 62%,var(--g) 100%);color:var(--w);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;left:0;top:0;bottom:0;width:min(34vw,300px);background:var(--r);clip-path:polygon(0 0,100% 50%,0 100%);opacity:.9}
+.hero .wrap{position:relative;padding-top:84px;padding-bottom:96px}
+.hero h1{font-size:clamp(2rem,5.2vw,3.6rem);line-height:1.12;font-weight:800;max-width:860px;letter-spacing:-.02em}
+.hero p{font-size:1.12rem;max-width:660px;margin:22px 0 32px;color:#e5e7eb}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+section{padding:80px 0}
+section.white{background:var(--w)}
+h2{font-size:clamp(1.65rem,3.4vw,2.35rem);font-weight:800;line-height:1.2;letter-spacing:-.01em;margin-bottom:14px}
+.lead{color:var(--mut);max-width:720px;margin-bottom:40px;font-size:1.04rem}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--w);border:1px solid var(--line);border-radius:14px;padding:26px}
+.white .card{background:var(--bg)}
+.card h3{font-size:1.12rem;margin-bottom:8px}
+.card p,.card li{color:var(--mut);font-size:.96rem}
+.card ul{padding-left:18px;margin-top:6px}
+.ic{font-size:1.8rem;display:block;margin-bottom:10px}
+.tl{border-left:4px solid var(--g);margin-left:8px;display:grid;gap:28px}
+.tl article{position:relative;padding-left:28px}
+.tl article:before{content:"";position:absolute;left:-12px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--w);border:5px solid var(--r)}
+.yr{font-weight:800;color:var(--r);font-size:1.3rem}
+.tl h3{font-size:1.15rem;margin:2px 0 6px}
+.tl p{color:var(--mut);max-width:760px}
+.stat{border-top:5px solid var(--r)}
+.stat:nth-child(2){border-top-color:var(--k)}
+.stat:nth-child(3){border-top-color:var(--g)}
+.big{font-size:2.5rem;font-weight:800;line-height:1.1;color:var(--k)}
+.src{display:block;margin-top:10px;font-size:.8rem;color:#6b7280}
+.note{margin-top:28px;padding:18px 22px;border-left:5px solid var(--g);background:#ecf7f1;border-radius:0 10px 10px 0;color:#14532d;font-size:.95rem}
+.note.red{border-color:var(--r);background:#fdecee;color:#7f1d1d}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tab{border:2px solid var(--line);background:var(--w);padding:11px 18px;border-radius:999px;font:inherit;font-weight:600;cursor:pointer}
+.tab[aria-selected=true]{background:var(--g);border-color:var(--g);color:var(--w)}
+.panel[hidden]{display:none}
+.panel .grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{background:#f3f4f6;border-radius:8px;padding:4px 10px;font-size:.88rem;font-weight:600;color:var(--k)}
+.good .chip{background:#ecf7f1;color:#14532d}
+.verse{background:var(--k);color:var(--w);padding:64px 0;text-align:center}
+.verse blockquote{max-width:760px;margin:0 auto 26px;font-size:clamp(1.15rem,2.6vw,1.5rem);line-height:1.6}
+.verse cite{display:block;margin-top:10px;font-size:.92rem;color:#9ca3af;font-style:normal}
+.verse .two{display:grid;gap:36px;max-width:1000px;margin:0 auto}
+@media(min-width:860px){.verse .two{grid-template-columns:1fr 1fr}}
+footer{background:#0b1220;color:#d1d5db;padding:56px 0 28px;font-size:.92rem}
+footer .cols{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer h4{color:var(--w);margin-bottom:10px}
+footer ul{list-style:none}
+footer li{margin:6px 0}
+footer a{text-decoration:none}
+footer a:hover{color:var(--w);text-decoration:underline}
+.share{display:flex;gap:10px;flex-wrap:wrap}
+.share button{border:0;background:#1f2937;color:var(--w);padding:9px 14px;border-radius:8px;cursor:pointer;font:inherit;font-weight:600;font-size:.88rem}
+.share button:hover{background:var(--g)}
+.disc{border-top:1px solid #1f2937;margin-top:36px;padding-top:20px;font-size:.82rem;color:#9ca3af}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#home" aria-label="Palestine Truth &amp; Solidarity, home">
+      <svg width="34" height="24" viewBox="0 0 34 24" aria-hidden="true"><rect width="34" height="8" fill="#111827"/><rect y="8" width="34" height="8" fill="#fff" stroke="#e5e7eb"/><rect y="16" width="34" height="8" fill="#007A3D"/><path d="M0 0L15 12L0 24Z" fill="#CE1126"/></svg>
+      Palestine Truth &amp; Solidarity
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#gaza">Gaza Today</a></li>
+        <li><a href="#actions">Israel’s Actions</a></li>
+        <li><a href="#help">How to Help</a></li>
+        <li><a href="#boycott">Boycott Guide</a></li>
+        <li><a href="#survival">Resistance &amp; Survival</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a class="btn sm hide-m" href="#help">Donate / Take Action</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+    </div>
+  </div>
+  <div class="menu" id="menu">
+    <a href="#home">Home</a><a href="#history">History</a><a href="#gaza">Gaza Today</a><a href="#actions">Israel’s Actions</a><a href="#help">How to Help</a><a href="#boycott">Boycott Guide</a><a href="#survival">Resistance &amp; Survival</a>
+    <a href="#help" style="color:var(--r);font-weight:700;border:0">Donate / Take Action</a>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="home">
+  <div class="wrap">
+    <h1>Stand With Palestine: Remembering History, Confronting Reality, Supporting Resistance.</h1>
+    <p>A comprehensive guide to understanding Gaza’s history, current struggles, and actionable steps every human and Muslim can take today.</p>
+    <div class="cta"><a class="btn" href="#history">Explore History</a><a class="btn alt" href="#help">How You Can Help</a></div>
+  </div>
+</div>
+
+<section id="history" class="white">
+  <div class="wrap">
+    <h2>A history that did not begin in 2023</h2>
+    <p class="lead">Gaza’s story is part of a longer one: a people, a homeland, and more than seven decades of displacement and military rule.</p>
+    <div class="tl">
+      <article>
+        <div class="yr">Before 1948</div>
+        <h3>An indigenous society with deep roots</h3>
+        <p>For centuries Palestine was home to a majority Arab population of Muslims and Christians, alongside a Jewish community, living in towns such as Jaffa, Haifa, Nablus, Hebron, Jerusalem and Gaza. Palestinians farmed olive groves and citrus orchards, traded across the Mediterranean, and built a rich culture of poetry, cuisine, embroidery and scholarship. After the 1917 Balfour Declaration and the British Mandate (1920–1948), rising Zionist immigration and land purchases brought growing conflict over the country’s future.</p>
+      </article>
+      <article>
+        <div class="yr">1948</div>
+        <h3>The Nakba (“the Catastrophe”)</h3>
+        <p>During the war that followed the 1947 UN partition plan and the creation of Israel, around 750,000 Palestinians fled or were expelled from their homes, according to UN estimates. Hundreds of Palestinian villages were depopulated and many were destroyed. Gaza, a small coastal strip, absorbed a huge wave of refugees, and today most of its people are refugees or their descendants. UN General Assembly Resolution 194 affirmed the refugees’ right to return, a right that has never been implemented.</p>
+      </article>
+      <article>
+        <div class="yr">1967</div>
+        <h3>The Six-Day War and occupation</h3>
+        <p>Israel captured the West Bank, East Jerusalem and the Gaza Strip in June 1967. UN Security Council Resolution 242 called for Israeli withdrawal from territories occupied in the conflict. Instead, Israel built settlements on occupied land. In July 2024 the International Court of Justice issued an advisory opinion that Israel’s continued presence in the occupied Palestinian territory is unlawful and that settlements violate international law.</p>
+      </article>
+      <article>
+        <div class="yr">2007 – present</div>
+        <h3>The siege of Gaza</h3>
+        <p>Israel withdrew its settlers and troops from inside Gaza in 2005. After Hamas took control of the Strip in 2007, Israel (with Egypt’s cooperation at the Rafah crossing) imposed a land, sea and air blockade that restricted the movement of people, goods, fuel and building materials. Human rights groups and UN bodies described it as collective punishment, and Gaza’s economy, water supply and health system were weakened for years before the war that began in October 2023.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="gaza">
+  <div class="wrap">
+    <h2>Gaza today: the current reality</h2>
+    <p class="lead">A ceasefire took effect on 10 October 2025, yet the humanitarian emergency continues. The figures below come from named organisations and may change.</p>
+    <div class="grid">
+      <div class="card stat">
+        <span class="big">74,254+</span>
+        <h3>The human cost</h3>
+        <p>Gaza’s Health Ministry reports at least this many Palestinians killed since October 2023, with over 1,400 more killed after the ceasefire began. UNICEF reported at least 300 children killed in the first 300 days of the truce. Entire families, neighbourhoods and generations have been lost, and nearly all of Gaza’s population has been displaced at least once.</p>
+        <span class="src">Sources: Gaza Health Ministry; Islamic Relief (Oct 2026); UNICEF (Aug 2026)</span>
+      </div>
+      <div class="card stat">
+        <span class="big">~2.1 million</span>
+        <h3>Infrastructure crisis</h3>
+        <p>Islamic Relief reports that about 2.1 million people are squeezed into roughly 35% of the territory. UN agencies and the WHO have documented severe damage to hospitals, schools, universities, homes and water and sanitation systems, leaving children facing malnutrition, disease and limited access to clean water and education.</p>
+        <span class="src">Sources: Islamic Relief; UNICEF; WHO and OCHA reporting</span>
+      </div>
+      <div class="card stat">
+        <span class="big">Sabr</span>
+        <h3>Resilience and faith</h3>
+        <p>Through bombardment and loss, people in Gaza have kept teaching children in tents, running field clinics, baking bread on open fires, and welcoming the displaced. Their patience (sabr) and trust in God, expressed in the phrase “Hasbunallahu wa ni’mal wakeel,” have become a source of strength for Muslims and for people of conscience worldwide.</p>
+        <span class="src">Reported by journalists and aid workers on the ground</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="actions" class="white">
+  <div class="wrap">
+    <h2>Documenting Israeli policies and military conduct</h2>
+    <p class="lead">Courts, UN bodies and major human rights organisations have made serious findings against Israeli policy. These are summarised here as findings and allegations, with their sources.</p>
+    <div class="grid">
+      <div class="card"><span class="ic">🏚️</span><h3>Occupation and settlements</h3><p>The ICJ ruled in 2024 that the occupation is unlawful and that settlements breach the Fourth Geneva Convention. Settlers and settlement infrastructure continue to expand across the West Bank and East Jerusalem, with home demolitions and settler violence documented by the UN.</p></div>
+      <div class="card"><span class="ic">⚖️</span><h3>Apartheid and genocide findings</h3><p>Amnesty International, Human Rights Watch and Israel’s own B’Tselem have described a system of apartheid. Amnesty and a UN Commission of Inquiry have concluded that Israel committed genocide in Gaza. In 2024 the ICJ ordered provisional measures in South Africa v. Israel, and the ICC issued arrest warrants for Israeli leaders.</p></div>
+      <div class="card"><span class="ic">🩺</span><h3>Civilians, medics and aid</h3><p>The UN and the WHO have recorded hundreds of attacks on health facilities and the deaths of large numbers of medical workers. UN agencies report record numbers of aid workers killed, and aid deliveries repeatedly obstructed. UNRWA has been banned by Israeli law, and famine conditions were confirmed in parts of Gaza in 2025.</p></div>
+      <div class="card"><span class="ic">📰</span><h3>Journalists</h3><p>The Committee to Protect Journalists has described this as the deadliest conflict for journalists it has recorded. Foreign reporters have largely been barred from entering Gaza independently, so Palestinian journalists have carried the burden of documenting events.</p></div>
+    </div>
+    <div class="note red"><strong>Israel’s position:</strong> The Israeli government rejects the charge of genocide and apartheid. It says it is acting in self-defence after the 7 October 2023 Hamas-led attack, in which about 1,200 people were killed and around 250 taken hostage, and that Hamas embeds fighters among civilians. These disputes are before international courts, and readers are encouraged to read the primary sources themselves.</div>
+  </div>
+</section>
+
+<section id="survival">
+  <div class="wrap">
+    <h2>How Gaza can survive, and how we can help</h2>
+    <p class="lead">Survival depends on aid reaching people, on the killing stopping, and on the world refusing to look away. Sumud, steadfast perseverance, means staying rooted in land, family, education and faith. Our responsibility is to stand behind it.</p>
+    <div id="help">
+      <div class="tabs" role="tablist" aria-label="Ways to help">
+        <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">Spiritual &amp; moral duty</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2">Financial relief</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3">Advocacy</button>
+      </div>
+      <div class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+        <div class="grid">
+          <div class="card"><span class="ic">🤲</span><h3>Make continuous dua</h3><p>The Prophet ﷺ taught that the supplication of the oppressed is answered. Pray in every salah, in the last third of the night, and teach children to pray for Palestine by name.</p></div>
+          <div class="card"><span class="ic">📣</span><h3>Spread awareness</h3><p>Learn the history, then explain it to family, classmates and colleagues. Share verified reports from UN agencies, courts and credible journalists, and check before you forward.</p></div>
+          <div class="card"><span class="ic">🤝</span><h3>Maintain unity</h3><p>Set aside sectarian and political quarrels. The Quran calls the believers one brotherhood, and unity makes every other effort stronger. Reject hatred of any people: our cause is justice, not enmity toward Jews or any faith.</p></div>
+        </div>
+      </div>
+      <div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+        <div class="grid">
+          <div class="card"><h3>UN and medical agencies</h3><div class="chips"><span class="chip">UNRWA</span><span class="chip">UNICEF</span><span class="chip">Doctors Without Borders (MSF)</span><span class="chip">World Food Programme</span></div></div>
+          <div class="card"><h3>Palestinian and Muslim-led relief</h3><div class="chips"><span class="chip">Palestine Red Crescent Society</span><span class="chip">Medical Aid for Palestinians</span><span class="chip">Islamic Relief</span><span class="chip">Al-Khidmat Foundation (Pakistan)</span></div></div>
+          <div class="card"><h3>Give wisely</h3><ul><li>Donate through the charity’s own official website.</li><li>Check its registration and recent audited reports.</li><li>Be careful of social-media fundraisers you cannot verify.</li><li>Regular small monthly gifts help relief teams plan.</li></ul></div>
+        </div>
+      </div>
+      <div class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+        <div class="grid">
+          <div class="card"><span class="ic">🕊️</span><h3>Peaceful protest</h3><p>Join lawful marches, vigils and community events. Keep them peaceful, respectful and free from abuse, so the message stays about human rights.</p></div>
+          <div class="card"><span class="ic">📱</span><h3>Truth-sharing online</h3><p>Amplify named, verifiable sources, share first-hand voices from Gaza, and report disinformation. Always keep the dignity of victims in mind.</p></div>
+          <div class="card"><span class="ic">✉️</span><h3>Write to representatives</h3><p>Contact your MNA, senator, MP or local councillor. Ask for an end to arms transfers, support for humanitarian access, and compliance with ICJ and ICC rulings.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="boycott" class="white">
+  <div class="wrap">
+    <h2>Boycott guide: the BDS movement</h2>
+    <p class="lead">BDS (Boycott, Divestment, Sanctions) was launched in 2005 by Palestinian civil society. Supporters see it as a peaceful, nonviolent tool inspired by the campaign against apartheid in South Africa: ordinary people use their spending to stop supporting what they see as injustice. Critics argue that boycotts are unfair or ineffective, and some governments disagree with the campaign. Inclusion below reflects what BDS and consumer campaigns call for, not a legal ruling.</p>
+    <div class="grid">
+      <div class="card"><span class="ic">💻</span><h3>Tech</h3><div class="chips"><span class="chip">HP</span><span class="chip">Siemens</span><span class="chip">Google &amp; Amazon (Project Nimbus)</span><span class="chip">Microsoft</span></div></div>
+      <div class="card"><span class="ic">🍔</span><h3>Fast food</h3><div class="chips"><span class="chip">McDonald’s</span><span class="chip">KFC</span><span class="chip">Domino’s</span><span class="chip">Papa John’s</span><span class="chip">Burger King</span></div></div>
+      <div class="card"><span class="ic">🛍️</span><h3>Retail</h3><div class="chips"><span class="chip">Carrefour</span><span class="chip">Puma</span><span class="chip">Zara (Inditex)</span></div></div>
+      <div class="card"><span class="ic">🥤</span><h3>Consumer goods</h3><div class="chips"><span class="chip">Nestlé</span><span class="chip">Coca-Cola</span><span class="chip">PepsiCo</span><span class="chip">SodaStream</span></div></div>
+    </div>
+    <div class="grid" style="margin-top:20px">
+      <div class="card good"><span class="ic">🌱</span><h3>Ethical alternatives</h3><p>Choose local and ethical producers: Pakistani drinks, bakeries, clothing brands, tech repair shops and neighbourhood restaurants. Money spent locally also strengthens your own community.</p><div class="chips"><span class="chip">Local brands</span><span class="chip">Fair trade</span><span class="chip">Neighbourhood shops</span></div></div>
+      <div class="card"><span class="ic">💡</span><h3>Why boycott works</h3><p>It is legal, peaceful and open to everyone. It raises the reputational and financial cost of doing business with a policy, it keeps attention on the issue, and it needs no leader or budget, just a million small decisions.</p></div>
+      <div class="card"><span class="ic">✅</span><h3>Before you boycott</h3><p>Brand lists change and franchise ownership varies by country. Check the current guidance at bdsmovement.net, avoid harassing local shop workers, and remember that many staff are your neighbours.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="verse">
+  <div class="wrap two">
+    <div>
+      <blockquote>“O you who believe, stand firmly for justice as witnesses for God, even against yourselves, your parents or your relatives.”<cite>Quran, Surah An-Nisa 4:135 (paraphrased translation)</cite></blockquote>
+    </div>
+    <div>
+      <blockquote>“The believers, in their mutual love, mercy and compassion, are like one body. When one part aches, the whole body responds with sleeplessness and fever.”<cite>Hadith, Sahih al-Bukhari and Sahih Muslim</cite></blockquote>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>Palestine Truth &amp; Solidarity</h4><p>Remembering history, confronting reality, and acting with conscience, peacefully and with respect for every human life.</p></div>
+      <div><h4>Quick links</h4><ul><li><a href="#history">History</a></li><li><a href="#gaza">Gaza Today</a></li><li><a href="#actions">Israel’s Actions</a></li><li><a href="#help">How to Help</a></li><li><a href="#boycott">Boycott Guide</a></li></ul></div>
+      <div><h4>Learn more</h4><ul><li><a href="https://www.unrwa.org" target="_blank" rel="noopener">UNRWA</a></li><li><a href="https://www.ochaopt.org" target="_blank" rel="noopener">UN OCHA oPt</a></li><li><a href="https://www.icj-cij.org" target="_blank" rel="noopener">International Court of Justice</a></li><li><a href="https://bdsmovement.net" target="_blank" rel="noopener">BDS Movement</a></li></ul></div>
+      <div><h4>Share this page</h4><div class="share"><button data-s="x">X / Twitter</button><button data-s="wa">WhatsApp</button><button data-s="fb">Facebook</button></div></div>
+    </div>
+    <p class="disc"><strong>Disclaimer:</strong> This site is an educational and advocacy resource. Casualty figures are attributed to the organisations that published them and can change. It criticises state policies and military conduct, not Jewish people or any religion, and it condemns all violence against civilians. Verify claims with primary sources, and check any charity before donating. Brand names refer to boycott campaigns and are not legal findings.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'✕':'☰'});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰'}});
+  var tabs=document.querySelectorAll('.tab');
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.setAttribute('aria-selected',x===t);document.getElementById(x.getAttribute('aria-controls')).hidden=x!==t});
+  })});
+  var links=document.querySelectorAll('nav a'),secs=[].slice.call(links).map(function(a){return document.querySelector(a.getAttribute('href'))});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    secs.forEach(function(s){if(s)io.observe(s)});
+  }
+  document.querySelectorAll('[data-s]').forEach(function(btn){btn.addEventListener('click',function(){
+    var u=encodeURIComponent(location.href),t=encodeURIComponent('Palestine Truth & Solidarity: history, Gaza today, and ways to help');
+    var map={x:'https://twitter.com/intent/tweet?text='+t+'&url='+u,wa:'https://wa.me/?text='+t+'%20'+u,fb:'https://www.facebook.com/sharer/sharer.php?u='+u};
+    window.open(map[btn.dataset.s],'_blank','noopener,width=600,height=500');
+  })});
+})();
+</script>
+</body>
+</html>
